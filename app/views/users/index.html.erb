@@ -1,0 +1,13 @@
+<%=image_tag "HopCatMMLogo2.png"%>
+<hr>
+<h2>Are you 21 or Older?</h2>
+<br>
+<div class="landing-age-check">
+  <div class="col-xs-6">
+    <%=link_to "Yes!", root_url, class: "btn btn-success", id:"yes-btn"%>
+  </div>
+  <div class="col-xs-6">
+    <%=link_to "No", not21_path, class: "btn btn-danger", id:"no-btn"%>
+  </div>
+
+</div>
