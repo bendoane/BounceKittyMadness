@@ -13,6 +13,9 @@ class UsersController < ApplicationController
     redirect_to root_url
   end
 
+  def not21
+  end
+
   private
 
   def user_params
