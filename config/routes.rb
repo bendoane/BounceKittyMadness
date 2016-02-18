@@ -5,6 +5,7 @@ Rails.application.routes.draw do
    root 'users#index'
    get 'not21' => 'users#not21'
    resources :users, :only => [:new, :create]
+   get 'beerbracket' => 'beers#bracket'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
