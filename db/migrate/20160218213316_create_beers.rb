@@ -5,8 +5,9 @@ class CreateBeers < ActiveRecord::Migration
       t.string "style"
       t.integer "IBU"
       t.float "ABV"
-      t.string "Brewery"
+      t.string "brewery"
       t.string "location"
+      t.boolean "local_beer", default: true, null: false
 
       t.timestamps null: false
     end

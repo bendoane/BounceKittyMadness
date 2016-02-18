@@ -18,10 +18,11 @@ ActiveRecord::Schema.define(version: 20160218213316) do
     t.string   "style"
     t.integer  "IBU"
     t.float    "ABV"
-    t.string   "Brewery"
+    t.string   "brewery"
     t.string   "location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "local_beer", default: true, null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "users", force: :cascade do |t|
